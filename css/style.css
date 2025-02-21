@@ -78,6 +78,7 @@ body.dark {
 
 .header .user img {
   margin: 1rem;
+  object-fit: cover;
   border: 1rem solid transparent;
   border-radius: 50%;
   height: 18rem;
