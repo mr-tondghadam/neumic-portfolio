@@ -31,7 +31,6 @@ html {
   font-size: 62.5%;
   margin: 0;
   position: relative;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
@@ -51,7 +50,7 @@ body {
 
 section {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   padding: 2rem;
 }
 body.dark {
@@ -78,7 +77,6 @@ body.dark {
 
 .header .user img {
   margin: 1rem;
-  object-fit: cover;
   border: 1rem solid transparent;
   border-radius: 50%;
   height: 18rem;
@@ -445,6 +443,7 @@ body.dark {
   box-shadow: var(--box-sodow-inset);
   color: var(--green);
 }
+
 /** media Querry  */
 @media (max-width: 991px) {
   html {
@@ -452,9 +451,10 @@ body.dark {
   }
   body {
     padding-left: 0;
-    width: 100vw;
   }
-
+  /* #theme-toggler {
+    left: 10rem;
+  } */
   .header {
     left: -110%;
   }
@@ -470,9 +470,8 @@ body.dark {
   html {
     font-size: 50%;
   }
-  body {
-    padding-left: 0;
-    width: 100vw;
+  #theme-toggler {
+    right: 1rem; /* فاصله کمتر در موبایل */
   }
 
   .header {
