@@ -29,6 +29,8 @@
 }
 html {
   font-size: 62.5%;
+  margin: 0;
+  position: relative;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -49,7 +51,7 @@ body {
 
 section {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   padding: 2rem;
 }
 body.dark {
@@ -250,6 +252,8 @@ body.dark {
   text-align: center;
   color: var(--black);
   background: var(--bg-color);
+  right: 2rem; /* مطمئن شو که در سمت راست قرار بگیره */
+  overflow: hidden;
 }
 
 #theme-toggler:hover {
@@ -440,7 +444,6 @@ body.dark {
   box-shadow: var(--box-sodow-inset);
   color: var(--green);
 }
-
 /** media Querry  */
 @media (max-width: 991px) {
   html {
@@ -448,6 +451,7 @@ body.dark {
   }
   body {
     padding-left: 0;
+    width: 100vw;
   }
 
   .header {
@@ -464,6 +468,10 @@ body.dark {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  body {
+    padding-left: 0;
+    width: 100vw;
   }
 
   .header {
