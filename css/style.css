@@ -36,7 +36,6 @@ html {
 }
 body {
   background-color: var(--bg-color);
-  padding-left: 30rem;
 }
 
 .heading {
